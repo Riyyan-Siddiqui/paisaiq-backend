@@ -13,3 +13,6 @@ For generating migrations
 
 For Applying migrations
     alembic upgrade head
+
+For Starting the fast api server
+    uvicorn app.main:app --host 0.0.0.0 --port 5000
