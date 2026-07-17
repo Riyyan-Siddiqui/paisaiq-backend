@@ -9,9 +9,7 @@ from app.database.database import Base
 from alembic import context
 from app.core.config import DATABASE_URL
 
-from app.models.user import User
-from app.models.bank_account import bankAccount
-from app.models.transaction import Transaction
+import app.models
 
 
 # this is the Alembic Config object, which provides

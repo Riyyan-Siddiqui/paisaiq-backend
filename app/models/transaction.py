@@ -54,18 +54,18 @@ class Transaction(Base):
 
     # Relationships
     bank_account = relationship(
-        "BankAccount",
+        "bankAccount",
         back_populates="transactions",
     )
 
-    receipt = relationship(
-        "Receipt",
-        back_populates="transaction",
-        uselist=False,
-    )
+    # receipt = relationship(
+    #     "Receipt",
+    #     back_populates="transaction",
+    #     uselist=False,
+    # )
 
-    anomaly = relationship(
-        "Anomaly",
-        back_populates="transaction",
-        uselist=False,
-    )
+    # anomaly = relationship(
+    #     "Anomaly",
+    #     back_populates="transaction",
+    #     uselist=False,
+    # )
